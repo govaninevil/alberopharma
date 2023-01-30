@@ -1,0 +1,308 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@400;500;700&family=Work+Sans:wght@200;300;400;500;600;700;800;900&display=swap');
+
+body{
+    font-family: 'Bebas Neue', cursive;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Work Sans', sans-serif;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+h1,h2,h3{
+    font-family: 'Bebas Neue', cursive;
+}
+ul{
+    margin: 0px !important;
+    padding: 0px !important;
+}
+
+header{transition: all .5s ease-in-out;}
+header.small{position: fixed; top: 0px; left: 0px; background-color: #ffffff; z-index: 10; transition: all .5s ease-in-out;}
+.right-nav ul li a:hover{
+    color: #008BD0;
+    transition: all .5s ease-in-out;
+}
+.banner-title{
+    font-family: 'Bebas Neue', cursive;
+}
+.slide::before{
+    position: absolute;
+    content: '';
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    opacity: .6;
+}
+.banner-slider .slick-dots li button:before{
+    font-size: 16px;
+    color: #fff;
+    opacity: 1;
+}
+.banner-slider .slick-dots .slick-active button:before{
+    color: #000;
+}
+.banner-slider .slick-dots{
+    bottom: 30px;
+}
+.slide-content span{
+    color: #009EFF;
+}
+.banner-slider {
+    margin-top: -4%;
+}
+.slider-title::before{
+    position: absolute;
+    width: 70%;
+    content: '';
+    bottom: 0;
+    left: 0;
+    height: 6px;
+    background-color: #009EFF;
+    border-radius: 10px;
+}
+.slick-prev, .slick-next{
+    width: 49px;
+    top: 110.5%;
+    z-index: 3;
+}
+.slick-prev{
+    left: 80px;
+}
+.slick-next{
+    right: 80px;
+}
+.our-product .slick-dots li button:before{
+    font-size: 10px;
+    color: #fff;
+    opacity: 1;
+}
+.our-product .slick-dots .slick-active button:before{
+    color: #000;
+}
+.our-product .slick-dots li{
+    margin: 0px !important;
+}
+.our-product .slick-dots{
+    bottom: -27px;
+}
+.serving-medical .container-fluid::before{
+    position: absolute;
+    content: '';
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    opacity: .70;
+}
+.serving-medical .container-fluid{
+    background-image: url('../image/3633.png');
+}
+.gallery-slider .slick-next {
+    right: 40%;
+}
+.gallery-slider .slick-prev {
+    left: 40%;
+}
+.gallery-slider .slick-dots{
+    bottom: -31px;
+}
+.gallery-slider .slick-dots li{
+    margin: 0px;
+}
+.gallery-slider .slick-dots li button:before{
+    font-size: 10px;
+}
+input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #000;
+    opacity: 1; /* Firefox */
+}
+.last-line{
+    border-color: #000;
+}
+
+
+
+/* about-us */
+.quick-fact .line{
+    border-right: 1px solid #fff;
+}
+.quick-fact .img::before{
+    position: absolute;
+    content: '';
+    top: 0px;
+    bottom: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    opacity: .5;
+}
+
+
+
+/* careers */
+.careers .slick-slide {
+    margin:0 18px;
+}
+
+.careers{
+    background-image: url('../image/careers-background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.careers .slick-dots li{
+    margin: 0px;
+}
+.careers .slick-dots li button:before{
+    font-size: 14px;
+    opacity: 1;
+    color: #000;
+}
+.careers .slick-dots li.slick-active button:before{
+    color: #008BD0;
+}
+
+
+/* our product */
+ .img-box{
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+
+/* responsive */
+@media screen and (max-width:1500px) {
+    .banner-slider {
+        margin-top: -7%;
+    }
+}
+@media screen and (max-width:1060px) {
+    .navbar-box{position: relative;display: block !important;}
+    .menu-box{display: block !important; position: absolute; top: 50%; right: 20px; transform: translateY(-50%);}
+    .mobile .menu-box{top: 25px !important;} 
+    .menu-box span{height: 4px;}
+    .right-nav{display: none !important;margin-top: 30px;}
+    .mobile{overflow: hidden;height: 100vh;position: sticky;top: 0px;left: 0px;}
+    header{position: sticky; top: 0px; left: 0px; background-color: #ffffff; z-index: 99;}
+    .mobile .right-nav{display: block !important;}
+    .mobile header{height: 100vh;}
+    .right-nav ul li{display: block !important;}
+    .right-nav ul{margin-bottom: 0px;}
+    .right-nav ul li{margin: 0px 0px 10px 0px !important; }
+    .mobile .menu-box span:first-child{transform: rotate(45deg);position: absolute;top: 9px;transition: all ease-in-out .5s;}
+    .mobile .menu-box span:last-child{transform: rotate(135deg);transition: all ease-in-out .5s}
+    .mobile .menu-box span:nth-child(2){opacity: 0;transition: all ease-in-out .5s}
+    .menu-box span{transition: all ease-in-out .5s}
+    .slick-prev{
+        left: 50px;
+    }
+    .slick-next{
+        right: 50px;
+    }
+    .banner-slider .slider-title{
+        font-size: 80px;
+    }
+    .title h3{
+        font-size: 40px;
+    }
+    .about-us .content {
+        font-size: 14px;
+    }
+    .about-us .row{
+        justify-content: center;
+    }
+    .about-us .col-md-2{
+        width: 30%;
+        transform: translateY(0);
+        margin-bottom: 30px;
+    }
+    .about-us .col-md-8{
+        width: 100%;
+        text-align: center;
+    }
+    .container{
+        margin: 40px auto !important;
+        padding: 0px;
+    }
+
+    
+}
+@media screen and (max-width:640px) {
+    .banner-slider .slider-title{
+        font-size: 30px;
+    }
+    header{
+        padding: 5px 20px !important;
+    }
+    .banner-slider .slick-dots li button:before{
+        font-size: 9px;
+    }
+    .slick-dots li{
+        margin: 0px;
+    }
+    .slick-dots li button{
+        display: none;
+    }
+    .gallary .sub-title{
+        margin-bottom: 40px !important;
+    }
+    .our-product .background-img{
+        height: 50vh;
+    }
+    .mobile .menu-box{
+        top: 10px !important;
+    }
+    .row{
+        width: 100%;
+        margin: 0px !important;
+    }
+    .overview .container{
+        margin: 0px !important;
+    }
+}
+@media screen and (max-width:425px) {
+    .about-us .content{
+        padding: 0px 20px;
+    }
+    .our-values .container-fluid{
+        padding: 30px 50px;
+    }
+    .gallery .container-fluid{
+        padding: 30px 50px !important;
+    }
+    .our-product .title h1{
+        font-size: 40px !important;
+    }
+    .our-product .background-img{
+        height: 40vh;
+    }
+    .gallery-slider .slick-prev {
+        left: 10%;
+    }
+    .gallery-slider .slick-next {
+        right: 10%;
+    }
+    .contact-from .container-fluid{
+        padding: 0px;
+    }
+    .contact-from .row{
+        padding: 20px !important;
+        border-radius: 0px;
+    }
+    .contact-from .from .row{
+        padding: 0px !important;
+    }
+    .contact-from .contact-us{
+        padding: 20px;
+    }
+    footer{
+        padding: 0px !important;
+        text-align: center !important;
+    }
+    footer img{
+        margin: 0 auto !important;
+    }
+}

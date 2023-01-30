@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ALBERO FRAMA</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css"
+    integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"
+    integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style/style.css" />
+</head>
+
+<body>
+  <header class="xl:px-[70px] px-[50px] py-[5px] text-black sticky top-0 left-0 z-[99] bg-white w-full">
+    <div class="navbar-box flex justify-content-between items-center">
+      <div class="logo w-[13%]">
+        <a href="index.html" class="my-[11px]"><img src="image/logo.svg" alt="logo" /></a>
+      </div>
+
+      <div class="right-nav text-[18px]">
+        <ul>
+          <li class="inline ml-[41px]"><a href="index.html">Home</a></li>
+          <li class="inline ml-[41px]">
+            <a href="about-us.html">About us</a>
+          </li>
+          <li class="inline ml-[41px]"><a href="career.html">Careers</a></li>
+          <li class="inline ml-[41px]">
+            <a href="contact-us.html">Contact Us</a>
+          </li>
+          <li class="inline ml-[41px]">
+            <a href="our-product.html">Our Products</a>
+          </li>
+          <li class="inline ml-[41px]">
+            <a href="#" class="px-[30px] py-[10px] bg-[#000000] text-white">Login</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="menu-box hidden" id="mobile">
+        <span class="w-[38px] block h-[5px] mb-[4px] bg-black rounded-[10px]"></span>
+        <span class="w-[38px] block h-[5px] mb-[4px] bg-black rounded-[10px]"></span>
+        <span class="w-[38px] block h-[5px] bg-black rounded-[10px]"></span>
+      </div>
+    </div>
+  </header>
+
+  <!-- slider section -->
+  <section class="banner-slider">
+    <div class="slider" id="banner-slide">
+      <div class="slide position-relative">
+        <img src="image/banner.png" alt="" />
+        <div class="slide-content position-absolute top-[50%] left-[5%] -translate-y-[50%]">
+          <h2 class="text-[166px] xl:text-[116px] banner-title text-white slider-title relative">
+            RECOVER<span>,</span> HEAL<br /><span>&</span> EXCEL
+          </h2>
+        </div>
+      </div>
+      <div class="slide position-relative">
+        <img src="image/banner.png" alt="" />
+        <div class="slide-content position-absolute top-[50%] left-[5%] -translate-y-[50%]">
+          <h2 class="text-[166px] banner-title text-white slider-title relative">
+            RECOVER<span>,</span> HEAL<br /><span>&</span> EXCEL
+          </h2>
+        </div>
+      </div>
+      <div class="slide position-relative">
+        <img src="image/banner.png" alt="" />
+        <div class="slide-content position-absolute top-[50%] left-[5%] -translate-y-[50%]">
+          <h2 class="text-[166px] banner-title text-white slider-title relative">
+            RECOVER<span>,</span> HEAL<br /><span>&</span> EXCEL
+          </h2>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About us -->
+  <section class="about-us">
+    <div class="container mt-[159px] pb-[170px] xl:px-16">
+      <div class="row">
+        <div class="col-md-2 translate-y-[50px]">
+          <img src="image/about-us-img-3.png" alt="" class="mb-[30px]" />
+          <img src="image/about-us-img-2.png" alt="" />
+        </div>
+        <div class="col-md-2">
+          <img src="image/about-us-img-1.png" alt="" class="mb-[30px]" />
+          <img src="image/about-us-img-4.png" alt="" />
+        </div>
+        <div class="col-md-8 xl:pl-[36px] xl:px-[0px] px-[36px] ">
+          <div class="title mb-[13px] text-[#009EFF]">
+            <h3 class="text-[60px]">ABOUT US</h3>
+          </div>
+          <div class="content text-[17px] xl:text-[15px] text-justify">
+            <p>
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+              diam nonumy eirmod tempor invidunt ut labore et dolore magna
+              aliquyam erat, sed diam voluptua. At vero eos et accusam et
+              justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea
+              takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum
+              dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+              eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
+              sed diam voluptua. At vero eos et accusam et justo duo dolores
+              et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus
+              est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet,
+              consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+              invidunt ut labore et dolore magna aliquyam erat, sed diam
+              voluptua. At vero eos et accusam et justo duo dolores et ea
+              rebum. Stet clita kasd gubergren, no sea takimata sanctus est
+              Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet,
+              consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+              invidunt ut labore et dolore magna aliquyam erat, sed diam
+              voluptua. At vero eos et accusam et justo duo dolores et ea
+              rebum. Stet clita kasd gubergren, no sea takimata sanctus est
+              Lorem ipsum.Lorem ipsum dolor sit amet, consetetur sadipscing
+              elitr, sed diam nonumy eirmod tempor invidunt ut labore et
+              dolore magna aliquyam erat, sed diam voluptua. At vero eos et
+              accusam et justo duo dolores et ea rebum. Stet clita kasd
+              gubergren, no sea takimata sanctus est Lorem ipsum dolor sit
+              amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+              sed diam nonumy eirmod tempor invidunt ut labore et dolore magna
+              aliquyam erat, sed dia
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- our product -->
+  <section class="our-product relative overflow-hidden">
+    <img src="image/abou-us-background.png" alt="" class="background-img">
+    <div class="container px-[80px]  absolute xl:top-[50%] top-[40%] -translate-y-[50%] left-[50%] -translate-x-[50%]">
+      <div class="row w-full items-center">
+        <div class="col-md-6 xl:pl-0 pl-[50px]">
+          <div class="title">
+            <h1 class="xl:text-[130px] text-[90px] xl:tracking-[13px] tracking-[9px] mb-[15px]">
+              Our<span class="text-[#009EFF]"> Products</span>
+            </h1>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="product-slider" id="product-slider">
+            <div class="product">
+              <img src="image/product-1.png" alt="" class="mx-auto w-[80%]" />
+            </div>
+            <div class="product">
+              <img src="image/product-2.png" alt="" class="mx-auto w-[80%]" />
+            </div>
+            <div class="product">
+              <img src="image/product-3.png" alt="" class="mx-auto w-[80%]" />
+            </div>
+            <div class="product">
+              <img src="image/product-4.png" alt="" class="mx-auto w-[80%]" />
+            </div>
+            <div class="product">
+              <img src="image/product-5.png" alt="" class="mx-auto w-[80%]" />
+            </div>
+            <div class="product">
+              <img src="image/product-6.png" alt="" class="mx-auto w-[80%]" />
+            </div>
+            <div class="product">
+              <img src="image/product-7.png" alt="" class="mx-auto w-[80%]" />
+            </div>
+            <div class="product">
+              <img src="image/product-8.png" alt="" class="mx-auto w-[80%]" />
+            </div>
+            <div class="product">
+              <img src="image/product-9.png" alt="" class="mx-auto w-[80%]" />
+            </div>
+            <div class="product">
+              <img src="image/product-10.png" alt="" class="mx-auto w-[80%]" />
+            </div>
+            <div class="product">
+              <img src="image/product-11.png" alt="" class="mx-auto w-[80%]" />
+            </div>
+            <div class="product">
+              <img src="image/product-12.png" alt="" class="mx-auto w-[80%]" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- our values -->
+  <section class="our-values">
+    <div class="container-fluid px-20 xl:py-48 py-24">
+      <div class="title text-center text-sm-left mb-[13px] text-[#009EFF]">
+        <h3 class="xl:text-[120px] text-[90px] xl:tracking-[12px] tracking-[8px]">
+          <span class="text-black">OUR</span> VALUES
+        </h3>
+      </div>
+      <div class="row">
+        <div class="col-md-4 px-[18px]">
+          <div class="box p-[30px] rounded-[18px] bg-[#E2F5FF] mb-[15px]">
+            <div class="title">
+              <h4 class="xl:text-[30px] text-[22px] text-[#008BD0]">Our Mission</h4>
+            </div>
+            <p class="text-justify text-[14px]">
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+              diam nonumy eirmod tempor invidunt ut labore et dolore magna
+              aliquyam erat, sed diam.
+            </p>
+          </div>
+        </div>
+        <div class="col-md-4 px-[18px]">
+          <div class="box p-[30px] rounded-[18px] bg-[#E2F5FF] mb-[15px]">
+            <div class="title">
+              <h4 class="xl:text-[30px] text-[22px] text-[#008BD0]">Our Vision</h4>
+            </div>
+            <p class="text-justify text-[14px]">
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+              diam nonumy eirmod tempor invidunt ut labore et dolore magna
+              aliquyam erat, sed diam.
+            </p>
+          </div>
+        </div>
+        <div class="col-md-4 px-[18px]">
+          <div class="box p-[30px] rounded-[18px] bg-[#E2F5FF] mb-[15px]">
+            <div class="title">
+              <h4 class="xl:text-[30px] text-[22px] text-[#008BD0]">Our Goals</h4>
+            </div>
+            <p class="text-justify text-[14px]">
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+              diam nonumy eirmod tempor invidunt ut labore et dolore magna
+              aliquyam erat, sed diam.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- serving medical -->
+  <section class="serving-medical">
+    <div class="container-fluid xl:py-28 py-14 relative">
+      <div class="text">
+        <h2 class="text-center relative z-[2] text-[white] xl:text-6xl text-[30px] xl:tracking-[10px] tracking-[8px]" >
+          serving medical fraternity <br />for over
+          <span class="text-[#009EFF]"><span class="text-9xl">6</span> year</span>
+        </h2>
+      </div>
+    </div>
+  </section>
+
+  <!-- gallery -->
+  <section class="gallery">
+    <div class="container-fluid px-20 xl:py-24 py-20">
+      <div class="title">
+        <h1 class="xl:text-[120px] text-[60px] tracking-[12px]">GALLERY</h1>
+      </div>
+      <div class="sub-title md:mb-[90px] mb-[30px]">
+        <h2 class="xl:text-[60px] text-[30px] tracking-[6px] text-[#008BD0]">
+          SPECIAL EVENTs
+        </h2>
+      </div>
+      <div class="gallery-slider" id="gallery-slider">
+        <div class="gallery-slide xl:px-11 px-2">
+          <img src="image/gallery-img-3.png" alt="" />
+        </div>
+        <div class="gallery-slide xl:px-11 px-2">
+          <img src="image/gallery-img-2.png" alt="" />
+        </div>
+        <div class="gallery-slide xl:px-11 px-2">
+          <img src="image/gallery-img-1.png" alt="" />
+        </div>
+        <div class="gallery-slide xl:px-11 px-2">
+          <img src="image/gallery-img-3.png" alt="" />
+        </div>
+        <div class="gallery-slide xl:px-11 px-2">
+          <img src="image/gallery-img-2.png" alt="" />
+        </div>
+        <div class="gallery-slide xl:px-11 px-2">
+          <img src="image/gallery-img-1.png" alt="" />
+        </div>
+        <div class="gallery-slide xl:px-11 px-2">
+          <img src="image/gallery-img-3.png" alt="" />
+        </div>
+        <div class="gallery-slide xl:px-11 px-2">
+          <img src="image/gallery-img-2.png" alt="" />
+        </div>
+        <div class="gallery-slide xl:px-11 px-2">
+          <img src="image/gallery-img-1.png" alt="" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- from -->
+  <section class="contact-from">
+    <div class="container-fluid p-24">
+      <div class="from-box">
+        <div class="row px-[67px] py-[88px] bg-[#2C2D2D] xl:justify-between justify-center rounded-[18px]">
+          <div class="col-xl-5 col-12">
+            <div class="from">
+              <div class="row">
+                <div class="title">
+                  <h2 class="xl:text-[60px] text-[30px] xl:mb-[70px] mb-[25px] text-center sm:text-left tracking-[6px] text-[#ffffff]">
+                    DROP A MESSAGE
+                  </h2>
+                </div>
+                <div class="col-md-6">
+                  <div class="from-grouo">
+                    <input type="text" name="Frist name" id="frist-name" placeholder="Frist name"
+                      class="w-full xl:text-[24px] text-[17px] xl:p-[20px] p-[10px] bg-[#D8F2FF] mb-[30px]" />
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="from-grouo">
+                    <input type="text" name="Last name" id="last-name" placeholder="Last name"
+                      class="w-full xl:text-[24px] text-[17px] xl:p-[20px] p-[10px] bg-[#D8F2FF] mb-[30px]" />
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="from-grouo">
+                    <input type="email" name="Email" id="email" placeholder="Email address"
+                      class="w-full xl:text-[24px] text-[17px] xl:p-[20px] p-[10px] bg-[#D8F2FF] mb-[30px]" />
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="from-grouo">
+                    <input type="text" name="Number" id="number" placeholder="Phone Number"
+                      class="w-full xl:text-[24px] text-[17px] xl:p-[20px] p-[10px] bg-[#D8F2FF] mb-[30px]" />
+                  </div>
+                </div>
+                <div class="col-12">
+                  <textarea id="w3review" name="problem" rows="6" placeholder="What is your problem?"
+                    class="w-full xl:p-[20px] p-[10px] xl:text-[24px] text-[17px] bg-[#D8F2FF]" cols="50"></textarea>
+                </div>
+                <div class="col-12 mt-[43px]">
+                  <button type="submit" class="px-[25px] py-[16px] w-[100%] sm:w-max text-center bg-[#008BD0] text-[#ffffff]">
+                    Book An Appointment
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-5 col-12 mt-[30px] xl:mt-[0px] contact-us  ">
+            <div class="contact-us-box">
+              <div class="title">
+                <h2 class="xl:text-[60px] text-[30px] text-center sm:text-left xl:mb-[70px] mb-[40px] tracking-[6px] text-[#ffffff]">
+                  CONTACT US
+                </h2>
+              </div>
+              <div class="contact-no mb-[49px]">
+                <div class="icon d-inline-block align-top mr-[20px]">
+                  <img src="image/contact-us-icon.png" alt="" />
+                </div>
+                <div class="number d-inline-block align-top">
+                  <a href="tel:+91 7048486616" class="xl:text-[20px] text-[14px] text-[#ffffff] block">+91
+                    7048486616</a>
+                  <a href="tel:+91 9409422727" class="xl:text-[20px] text-[14px] text-[#ffffff]">+91 9409422727</a>
+                </div>
+              </div>
+              <div class="address relative pl-[50px] mb-[102px]">
+                <i class="fa-solid fa-location-dot text-[30px] text-[#008BD0] absolute top-0 left-0"></i>
+                <ul class="d-inline-block xl:text-[20px] text-[14px] text-[#ffffff]">
+                  <li class="relative px-[25px] xl:text-[14px]  mb-[30px]">
+                    <span class="absolute top-0 left-0">1)</span>Lorem ipsum
+                    dolor sit amet, consetetur<br />
+                    sadipscing elitr, sed diam nonumy<br />
+                    eirmod tempor invidunt ut labore et<br />
+                    dolore.
+                  </li>
+                  <li class="relative px-[25px] xl:text-[14px]">
+                    <span class="absolute top-0 left-0">2)</span>Lorem ipsum
+                    dolor sit amet, consetetur<br />
+                    sadipscing elitr, sed diam nonumy<br />
+                    eirmod tempor invidunt ut labore et<br />
+                    dolore.
+                  </li>
+                </ul>
+              </div>
+              <div class="follow-us">
+                <h2 class="text-[30px] mb-[18px] text-[#ffffff] text-center text-sm-start">
+                  FOLLOW US
+                </h2>
+                <div class="socila-media text-center text-sm-start">
+                  <div class="icon-box d-inline-block border rounded-[50px] xl:p-[30px] p-[25px] relative xl:mr-[20px] mr-[15px]">
+                    <i
+                      class="fa-brands fa-facebook-f xl:text-[30px] text-[25px] text-[#ffffff] absolute top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%]"></i>
+                  </div>
+                  <div class="icon-box d-inline-block border rounded-[50px] xl:p-[30px] p-[25px] relative xl:mr-[20px] mr-[15px]">
+                    <i
+                      class="fa-brands fa-instagram xl:text-[30px] text-[25px] text-[#ffffff] absolute top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%]"></i>
+                  </div>
+                  <div class="icon-box d-inline-block border rounded-[50px] xl:p-[30px] p-[25px] relative xl:mr-[20px] mr-[15px]">
+                    <i
+                      class="fa-brands fa-whatsapp xl:text-[30px] text-[25px] text-[#ffffff] absolute top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%]"></i>
+                  </div>
+                  <div class="icon-box d-inline-block border rounded-[50px] xl:p-[30px] p-[25px] relative ">
+                    <i
+                      class="fa-brands fa-linkedin xl:text-[30px] text-[25px] text-[#ffffff] absolute top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%]"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-[#D8F2FF] xl:px-0 px-[50px]">
+    <div class="container-lg pt-[41px]">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="detail-box">
+            <div class="footer-logo mb-[23px]">
+              <a href="index.html"><img src="image/logo.svg" alt="logo" / ></a>
+            </div>
+            <p class="mb-[23px] text-[16px]">
+              We Are Always Ensure Best Medical <br />Treatment For Your
+              Health
+            </p>
+            <div class="social-btn">
+              <a href="#" class="mr-[20px] text-[16px] text-[#000000]"><i class="fa-brands fa-twitter"></i></a>
+              <a href="#" class="mr-[20px] text-[16px] text-[#000000]"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#" class="mr-[20px] text-[16px] text-[#000000]"><i class="fa-brands fa-facebook-f"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-2">
+          <div class="title text-[#008BD0] text-[16px] mb-[17px]">
+            <h4>FOR PATIENT</h4>
+          </div>
+          <ul>
+            <li class="mb-[17px]"><a href="#">Dentist</a></li>
+            <li class="mb-[17px]"><a href="#">Ambulance Call</a></li>
+            <li class="mb-[17px]"><a href="#">Blood Donor</a></li>
+            <li class="mb-[17px]"><a href="#">Consultation</a></li>
+            <li class="mb-[17px]"><a href="#">Hospital</a></li>
+          </ul>
+        </div>
+        <div class="col-md-2">
+          <div class="title text-[#008BD0] text-[16px] mb-[17px]">
+            <h4>SOLUTION</h4>
+          </div>
+          <ul>
+            <li class="mb-[17px]"><a href="#">Tips and Trick</a></li>
+            <li class="mb-[17px]"><a href="#">Food Health</a></li>
+            <li class="mb-[17px]"><a href="#">Blog</a></li>
+          </ul>
+        </div>
+        <div class="col-md-2">
+          <div class="title text-[#008BD0] text-[16px] mb-[17px]">
+            <h4>SOLUTION</h4>
+          </div>
+          <ul>
+            <li class="mb-[17px]"><a href="#">About</a></li>
+            <li class="mb-[17px]"><a href="#">Specialist</a></li>
+            <li class="mb-[17px]"><a href="#">Term and Privacy</a></li>
+            <li class="mb-[17px]"><a href="#">Contact us</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="last-line text-center py-[36px] border-t">
+        Copyright©2022 Albero Pharmaceuticals. Powered By Rchitrix Digital
+        Solutions
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.js"
+    integrity="sha512-WNZwVebQjhSxEzwbettGuQgWxbpYdoLf7mH+25A7sfQbbxKeS5SQ9QBf97zOY4nOlwtksgDA/czSTmfj4DUEiQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/884533464b.js" crossorigin="anonymous"></script>
+  <script src="script/script.js"></script>
+</body>
+
+</html>
