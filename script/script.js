@@ -14,6 +14,31 @@ $(document).on('ready', function () {
       }
     });
 
+    // careers slider
+    $('#career-slider').slick({
+      dots: true,
+      arrows: false,
+      infinite: true,
+      slidesToShow: 2,
+      slidesToScroll: 2,
+      autoplay: false ,
+      cssEase: 'linear',
+      responsive: [
+        {
+          breakpoint: 400,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            infinite: true,
+            dots: true
+          }
+        },
+        // You can unslick at a given breakpoint now by adding:
+        // settings: "unslick"
+        // instead of a settings object
+      ]
+    });
+
     $('#banner-slide').slick({
         dots: true,
         arrows: false,
@@ -59,7 +84,7 @@ $(document).on('ready', function () {
               infinite: true,
               dots: true
             }
-          },
+          }
           // You can unslick at a given breakpoint now by adding:
           // settings: "unslick"
           // instead of a settings object
@@ -111,35 +136,5 @@ $(document).on('ready', function () {
 
 
 
-      // careers slider
-      $('#career-slider').slick({
-        dots: true,
-        arrows: false,
-        infinite: true,
-        slidesToShow: 2,
-        slidesToScroll: 1,
-        autoplay: false ,
-        cssEase: 'linear',
-        responsive: [
-          {
-            breakpoint: 640,
-            settings: {
-              slidesToShow: 2,
-              slidesToScroll: 1,
-              infinite: true,
-              dots: true
-            },
-            breakpoint: 0,
-            settings: {
-              slidesToShow: 1,
-              slidesToScroll: 1,
-              infinite: true,
-              dots: true
-            }
-          },
-          // You can unslick at a given breakpoint now by adding:
-          // settings: "unslick"
-          // instead of a settings object
-        ]
-      });
+      
 });

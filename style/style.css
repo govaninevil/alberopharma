@@ -268,7 +268,7 @@ input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
         padding: 0px 20px;
     }
     .our-values .container-fluid{
-        padding: 30px 50px;
+        padding: 30px 0px;
     }
     .gallery .container-fluid{
         padding: 30px 50px !important;
@@ -304,5 +304,12 @@ input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
     }
     footer img{
         margin: 0 auto !important;
+    }
+    .about-us-from-title{
+        padding-left: 12px;
+        margin-bottom: 20px;
+    }
+    .container{
+        padding: 0px 20px;
     }
 }
